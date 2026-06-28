@@ -30,6 +30,7 @@
   font-family: var(--font-title);
   font-weight: 900;
   font-size: 4rem;
+  color: var(--branco);
   line-height: 1.1;
   margin-bottom: var(--spacing-md);
   letter-spacing: 2px;
@@ -80,16 +81,17 @@
   .homeSection {
     flex-direction: column;
   }
-  
+
   .rightCol {
-    display: none; /* Mobile: foto some, conforme especificado no prompt */
+    display: none;
+    /* Mobile: foto some, conforme especificado no prompt */
   }
-  
+
   .leftCol {
     padding: var(--spacing-lg) var(--spacing-md);
     text-align: center;
   }
-  
+
   .content {
     display: flex;
     flex-direction: column;
