@@ -159,6 +159,10 @@
     gap: var(--spacing-sm);
   }
 
+  .overlayDesc {
+    display: none;
+  }
+
   .overlayBtn {
     margin-top: var(--spacing-md);
   }
