@@ -6,16 +6,16 @@ const ProjectCard = ({ project }) => {
   const { t } = useLang();
 
   return (
-    <a 
-      href={project.link} 
-      target="_blank" 
-      rel="noopener noreferrer" 
+    <a
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
       className={styles.projectCard}
     >
-      <img 
-        src={`/images/${project.imageKey}`} 
-        alt={t(project.titleKey)} 
-        className={styles.projectImage} 
+      <img
+        src={`/images/${project.imageKey}`}
+        alt={t(project.titleKey)}
+        className={styles.projectImage}
       />
       <div className={styles.overlay}>
         <div className={styles.overlayContent}>

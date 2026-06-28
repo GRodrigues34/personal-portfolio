@@ -16,5 +16,14 @@ export const projects = [
     linkLabelKey: 'portfolio_project2_link_label',
     link: 'https://github.com/MaiconMian/bluevelvet-init8',
     type: 'academic'
+  },
+  {
+    id: 3,
+    imageKey: 'project-sisapec.jpg',
+    titleKey: 'portfolio_project3_title',
+    descKey: 'portfolio_project3_desc',
+    linkLabelKey: 'portfolio_project3_link_label',
+    link: 'https://www.sisapec.com/',
+    type: 'work'
   }
 ];

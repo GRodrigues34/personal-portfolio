@@ -37,6 +37,9 @@ export const translations = {
     portfolio_project2_title: "Academic — BlueVelvet Fullstack Project",
     portfolio_project2_desc: "Academic fullstack project of an online music sales website where I worked on the backend of the application.",
     portfolio_project2_link_label: "VIEW ON GITHUB",
+    portfolio_project3_title: "Backend Developer — SisAPEC",
+    portfolio_project3_desc: "Development and maintenance of the SisAPEC system, an outpatient care system for basic health units.",
+    portfolio_project3_link_label: "VIEW PROJECT",
     portfolio_more: "And many more to come!",
 
     // Contact
@@ -86,6 +89,10 @@ export const translations = {
     portfolio_project2_title: "Acadêmico — Projeto Fullstack BlueVelvet",
     portfolio_project2_desc: "Projeto acadêmico fullstack de um site de vendas online de música no qual trabalhei no backend da aplicação.",
     portfolio_project2_link_label: "VER NO GITHUB",
+    portfolio_project3_title: "Desenvolvedor Backend — SisAPEC",
+    portfolio_project3_desc: "Desenvolvimento e manutenção do sistema SisAPEC, sistema de atendimento ambulatorial para unidades básicas de saúde.",
+    portfolio_project3_link_label: "VER PROJETO",
+
     portfolio_more: "E muito mais por vir!",
 
     // Contact
