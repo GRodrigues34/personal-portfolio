@@ -45,6 +45,12 @@
   width: calc(100% + 4px);
 }
 
+.rightActions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
 .navLinks {
   display: flex;
   align-items: center;
@@ -102,7 +108,7 @@
 }
 
 .langWrapper {
-  margin-left: var(--spacing-md);
+  margin-left: 0;
 }
 
 .mobileMenuBtn {

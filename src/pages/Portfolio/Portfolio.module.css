@@ -101,11 +101,22 @@
   padding: 8px 16px;
   border: 1px solid var(--branco);
   transition: background-color 0.3s, color 0.3s;
+  position: relative;
+  z-index: 2;
 }
 
 .overlayBtn:hover {
   background-color: var(--branco);
   color: var(--preto);
+}
+
+.cardLinkDesktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .moreText {
@@ -118,5 +129,41 @@
 @media (max-width: 768px) {
   .projectsGrid {
     grid-template-columns: 1fr;
+  }
+
+  .projectCard {
+    aspect-ratio: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectImage {
+    aspect-ratio: 4/3;
+    height: auto;
+  }
+
+  .projectCard:hover .projectImage {
+    transform: none;
+  }
+
+  .overlay {
+    position: static;
+    height: auto;
+    opacity: 1;
+    background-color: var(--preto);
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .overlayContent {
+    padding: 0;
+    gap: var(--spacing-sm);
+  }
+
+  .overlayBtn {
+    margin-top: var(--spacing-md);
+  }
+
+  .cardLinkDesktop {
+    display: none;
   }
 }

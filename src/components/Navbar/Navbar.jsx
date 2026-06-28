@@ -18,26 +18,28 @@ const Navbar = () => {
           GR
         </a>
 
-        <div className={styles.mobileMenuBtn} onClick={toggleMenu}>
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </div>
+        <div className={styles.rightActions}>
+          <div className={`${styles.navLinks} ${isOpen ? styles.active : ''}`}>
+            <a href="#about" className={styles.link} onClick={closeMenu}>
+              {t('nav_about')}
+            </a>
+            <a href="#skills" className={styles.link} onClick={closeMenu}>
+              {t('nav_skills')}
+            </a>
+            <a href="#portfolio" className={styles.link} onClick={closeMenu}>
+              {t('nav_portfolio')}
+            </a>
+            <a href="#contact" className={styles.btnContact} onClick={closeMenu}>
+              {t('nav_contact')}
+            </a>
+          </div>
 
-        <div className={`${styles.navLinks} ${isOpen ? styles.active : ''}`}>
-          <a href="#about" className={styles.link} onClick={closeMenu}>
-            {t('nav_about')}
-          </a>
-          <a href="#skills" className={styles.link} onClick={closeMenu}>
-            {t('nav_skills')}
-          </a>
-          <a href="#portfolio" className={styles.link} onClick={closeMenu}>
-            {t('nav_portfolio')}
-          </a>
-          <a href="#contact" className={styles.btnContact} onClick={closeMenu}>
-            {t('nav_contact')}
-          </a>
-          
           <div className={styles.langWrapper}>
             <LanguageToggle />
+          </div>
+
+          <div className={styles.mobileMenuBtn} onClick={toggleMenu}>
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
           </div>
         </div>
       </div>

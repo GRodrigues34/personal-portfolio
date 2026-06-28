@@ -5,7 +5,7 @@ export const translations = {
     nav_skills: "Skills",
     nav_portfolio: "Portfolio",
     nav_contact: "Contact Me",
-    lang_label: "language:",
+    lang_label: "Language:",
 
     // Home
     home_greeting: "Hi, I am",
@@ -57,7 +57,7 @@ export const translations = {
     nav_skills: "Habilidades",
     nav_portfolio: "Portfólio",
     nav_contact: "Contato",
-    lang_label: "idioma:",
+    lang_label: "Idioma:",
 
     // Home
     home_greeting: "Olá, eu sou",

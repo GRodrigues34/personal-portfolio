@@ -4,7 +4,7 @@ import { translations } from '../i18n/translations';
 const LanguageContext = createContext();
 
 export function LanguageProvider({ children }) {
-  const [lang, setLang] = useState('en'); // inglês como padrão
+  const [lang, setLang] = useState('pt'); // português como padrão
 
   const toggleLang = () => setLang(prev => prev === 'en' ? 'pt' : 'en');
 

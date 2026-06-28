@@ -29,7 +29,7 @@ const skillsOther = [
   { name: 'HASKELL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haskell/haskell-original.svg' },
   { name: 'RABBITMQ', icon: 'https://img.icons8.com/ios-filled/50/000000/rabbit.png' },
   { name: 'POSTGRESQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
-  { name: 'SCRUM', icon: 'https://img.icons8.com/ios-filled/50/000000/agile.png' }
+  { name: 'SCRUM', icon: '/images/icon-scrum.png' }
 ];
 
 const Skills = () => {
@@ -56,19 +56,19 @@ const Skills = () => {
     <section id="skills" className={styles.skillsSection}>
       <div className={styles.container}>
         <h2 className={styles.pageTitle}>[ {t('skills_title')} ]</h2>
-        
+
         <div className={styles.skillCategory}>
           <h3 className={styles.categoryTitle}>{t('skills_using')}</h3>
           {renderSkillGrid(skillsUsing)}
         </div>
-        
+
         <div className={styles.separator}></div>
-        
+
         <div className={styles.skillCategory}>
           <h3 className={styles.categoryTitle}>{t('skills_learning')}</h3>
           {renderSkillGrid(skillsLearning)}
         </div>
-        
+
         <div className={styles.separator}></div>
 
         <div className={styles.skillCategory}>

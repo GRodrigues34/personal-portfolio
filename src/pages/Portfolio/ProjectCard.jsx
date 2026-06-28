@@ -6,12 +6,14 @@ const ProjectCard = ({ project }) => {
   const { t } = useLang();
 
   return (
-    <a
-      href={project.link}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={styles.projectCard}
-    >
+    <div className={styles.projectCard}>
+      <a 
+        href={project.link} 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        className={styles.cardLinkDesktop} 
+        aria-label={t(project.titleKey)}
+      ></a>
       <img
         src={`/images/${project.imageKey}`}
         alt={t(project.titleKey)}
@@ -21,10 +23,17 @@ const ProjectCard = ({ project }) => {
         <div className={styles.overlayContent}>
           <h3 className={styles.overlayTitle}>{t(project.titleKey)}</h3>
           <p className={styles.overlayDesc}>{t(project.descKey)}</p>
-          <span className={styles.overlayBtn}>[ {t(project.linkLabelKey)} ]</span>
+          <a 
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.overlayBtn}
+          >
+            [ {t(project.linkLabelKey)} ]
+          </a>
         </div>
       </div>
-    </a>
+    </div>
   );
 };
 
