@@ -31,13 +31,11 @@
 
 .separator {
   height: 2px;
-  background: repeating-linear-gradient(
-    90deg,
-    transparent,
-    transparent 10px,
-    var(--cinza-borda) 10px,
-    var(--cinza-borda) 20px
-  );
+  background: repeating-linear-gradient(90deg,
+      transparent,
+      transparent 10px,
+      var(--cinza-borda) 10px,
+      var(--cinza-borda) 20px);
   margin: var(--spacing-xl) 0;
   border: none;
 }
@@ -63,7 +61,7 @@
   .iconsRow {
     gap: var(--spacing-lg);
   }
-  
+
   .iconLink svg {
     width: 28px;
     height: 28px;

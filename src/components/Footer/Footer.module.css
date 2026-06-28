@@ -25,10 +25,26 @@
   font-size: 0.9rem;
   letter-spacing: 1px;
   transition: opacity 0.3s;
+  position: relative;
+}
+
+.backToTop::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
 }
 
 .backToTop:hover {
-  opacity: 0.7;
+  opacity: 0.8;
+}
+
+.backToTop:hover::after {
+  width: calc(100% + 4px);
 }
 
 .socialIcons {
