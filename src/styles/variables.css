@@ -1,0 +1,28 @@
+:root {
+  --preto: #0a0a0a;
+  --branco: #ffffff;
+  --cinza-escuro: #1a1a1a;
+  --cinza-medio: #333333;
+  --cinza-claro: #f0f0f0;
+  --cinza-borda: #e0e0e0;
+  --cinza-texto: #666666;
+
+  --font-title: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--cinza-claro);
+  color: var(--cinza-texto);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  color: var(--preto);
+}

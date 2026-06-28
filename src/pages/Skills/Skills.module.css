@@ -1,0 +1,108 @@
+.skillsSection {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--cinza-claro);
+  min-height: calc(100vh - 70px);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  text-align: center;
+}
+
+.pageTitle {
+  font-family: var(--font-title);
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  margin-bottom: var(--spacing-xl);
+  color: var(--preto);
+}
+
+.skillCategory {
+  margin-bottom: var(--spacing-xl);
+}
+
+.categoryTitle {
+  font-family: var(--font-title);
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin-bottom: var(--spacing-lg);
+  color: var(--preto);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-xl) var(--spacing-md);
+  justify-content: center;
+}
+
+.skillItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.iconWrapper {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skillIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* if we want all icons to be black/white we could use css filters, but simple-icons CDN gives original colors or we could fetch white. We leave it as is to match 'ícones SVGs oficiais'. */
+}
+
+.emojiIcon {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.skillName {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: var(--cinza-texto);
+  text-transform: uppercase;
+}
+
+.separator {
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 10px,
+    var(--cinza-borda) 10px,
+    var(--cinza-borda) 20px
+  );
+  margin: var(--spacing-xl) 0;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .iconWrapper {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

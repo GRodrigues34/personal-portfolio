@@ -1,0 +1,21 @@
+.toggleBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--branco);
+  font-family: var(--font-body);
+  transition: opacity 0.3s;
+}
+
+.toggleBtn:hover {
+  opacity: 0.8;
+}
+
+.label {
+  font-size: 0.9rem;
+  text-transform: lowercase;
+}
+
+.flag {
+  font-size: 1.2rem;
+}
