@@ -10,11 +10,11 @@ export const translations = {
     // Home
     home_greeting: "Hi, I am",
     home_name: "GUSTAVO RODRIGUES",
-    home_title: "Backend Developer | Frontend Developer",
+    home_title: "Fullstack Developer | Backend Focus",
 
     // About
     about_title: "ABOUT ME",
-    about_text: "Hi, I'm Gustavo Rodrigues, working as a backend developer at Polygon, where I work on the SisAPEC system that serves more than 20 basic health units in Alfenas, MG! I also offer frontend freelance work for businesses and companies.",
+    about_text: "Hi, I'm Gustavo Rodrigues. I currently work as a backend developer at Polygon Soluções, where I work on the SisAPEC system that serves more than 20 basic health units in Alfenas, MG! Additionally I offer freelance frontend services for businesses and companies.",
     about_explore: "EXPLORE",
     about_card1_title: "BACKEND DEVELOPMENT",
     about_card1_text: "Robust systems, APIs and backend integrations built with Java, Spring and Python.",
@@ -59,11 +59,11 @@ export const translations = {
     // Home
     home_greeting: "Olá, eu sou",
     home_name: "GUSTAVO RODRIGUES",
-    home_title: "Desenvolvedor Backend | Desenvolvedor Frontend",
+    home_title: "Desenvolvedor Fullstack | Foco em Backend",
 
     // About
     about_title: "SOBRE MIM",
-    about_text: "Olá, me chamo Gustavo Rodrigues, trabalhando como desenvolvedor backend na Polygon, no qual atuo no sistema SisAPEC que atende mais de 20 unidades básicas de saúde em Alfenas MG! Além disso, também ofereço trabalhos frontend como freelance para negócios e empresas.",
+    about_text: "Olá, me chamo Gustavo Rodrigues. No momento trabalho como desenvolvedor backend na Polygon Soluções, no qual atuo no sistema SisAPEC que atende mais de 20 unidades básicas de saúde em Alfenas MG! Além disso, também ofereço meus serviços como desenvolvedor frontend como freelance para negócios e empresas.",
     about_explore: "EXPLORAR",
     about_card1_title: "DESENVOLVIMENTO BACKEND",
     about_card1_text: "Sistemas robustos, APIs e integrações backend construídos com Java, Spring e Python.",
