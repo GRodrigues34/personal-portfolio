@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLang } from '../../context/LanguageContext';
 import { Github, Linkedin, Instagram } from 'lucide-react';
+import TypingEffect from '../../components/TypingEffect/TypingEffect';
 import styles from './Home.module.css';
 
 const Home = () => {
@@ -11,7 +12,7 @@ const Home = () => {
       <div className={styles.leftCol}>
         <div className={styles.content}>
           <span className={styles.greeting}>{t('home_greeting')}</span>
-          <h1 className={styles.name}>{t('home_name')}</h1>
+          <TypingEffect text={t('home_name')} className={styles.name} />
           <h2 className={styles.title}>{t('home_title')}</h2>
           
           <div className={styles.socialLinks}>
