@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLang } from '../../context/LanguageContext';
+import { motion } from 'framer-motion';
 import styles from './Skills.module.css';
 
 // Using lucide-react or simple SVGs for icons. 
@@ -35,10 +36,29 @@ const skillsOther = [
 const Skills = () => {
   const { t } = useLang();
 
+  const gridVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    show: { opacity: 1, scale: 1, transition: { duration: 0.4, type: 'spring', bounce: 0.4 } }
+  };
+
   const renderSkillGrid = (skills) => (
-    <div className={styles.grid}>
+    <motion.div 
+      className={styles.grid}
+      variants={gridVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}
+    >
       {skills.map((skill, index) => (
-        <div key={index} className={styles.skillItem}>
+        <motion.div key={index} variants={itemVariants} className={styles.skillItem}>
           <div className={styles.iconWrapper}>
             {skill.isEmoji ? (
               <span className={styles.emojiIcon}>{skill.icon}</span>
@@ -47,34 +67,60 @@ const Skills = () => {
             )}
           </div>
           <span className={styles.skillName}>{skill.name}</span>
-        </div>
+        </motion.div>
       ))}
-    </div>
+    </motion.div>
   );
 
   return (
     <section id="skills" className={styles.skillsSection}>
       <div className={styles.container}>
-        <h2 className={styles.pageTitle}>[ {t('skills_title')} ]</h2>
+        <motion.h2 
+          className={styles.pageTitle}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          [ {t('skills_title')} ]
+        </motion.h2>
 
-        <div className={styles.skillCategory}>
+        <motion.div 
+          className={styles.skillCategory}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5 }}
+        >
           <h3 className={styles.categoryTitle}>{t('skills_using')}</h3>
           {renderSkillGrid(skillsUsing)}
-        </div>
+        </motion.div>
 
         <div className={styles.separator}></div>
 
-        <div className={styles.skillCategory}>
+        <motion.div 
+          className={styles.skillCategory}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5 }}
+        >
           <h3 className={styles.categoryTitle}>{t('skills_learning')}</h3>
           {renderSkillGrid(skillsLearning)}
-        </div>
+        </motion.div>
 
         <div className={styles.separator}></div>
 
-        <div className={styles.skillCategory}>
+        <motion.div 
+          className={styles.skillCategory}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5 }}
+        >
           <h3 className={styles.categoryTitle}>{t('skills_other')}</h3>
           {renderSkillGrid(skillsOther)}
-        </div>
+        </motion.div>
 
       </div>
     </section>
