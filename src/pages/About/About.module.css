@@ -18,8 +18,8 @@
 .title {
   font-family: var(--font-title);
   font-weight: 900;
-  font-size: 2.5rem;
-  letter-spacing: 4px;
+  font-size: clamp(1.4rem, 6vw, 2.5rem);
+  letter-spacing: clamp(1px, 1vw, 4px);
   margin-bottom: var(--spacing-lg);
   color: var(--preto);
 }
@@ -92,9 +92,5 @@
   .servicesGrid {
     grid-template-columns: 1fr;
     gap: var(--spacing-xl);
-  }
-  
-  .title {
-    font-size: 2rem;
   }
 }
