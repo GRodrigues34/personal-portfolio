@@ -1,12 +1,18 @@
 import React from 'react';
 import { useLang } from '../../context/LanguageContext';
+import { motion } from 'framer-motion';
 import styles from './Portfolio.module.css'; // sharing module styles for simplicity or its own if preferred. Using Portfolio.module.css
 
 const ProjectCard = ({ project }) => {
   const { t } = useLang();
 
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
+  };
+
   return (
-    <div className={styles.projectCard}>
+    <motion.div variants={cardVariants} className={styles.projectCard}>
       <a 
         href={project.link} 
         target="_blank" 
@@ -33,7 +39,7 @@ const ProjectCard = ({ project }) => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
