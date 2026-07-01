@@ -51,12 +51,6 @@
 
 .socialLinks a {
   color: var(--branco);
-  transition: transform 0.3s, opacity 0.3s;
-}
-
-.socialLinks a:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
 }
 
 .rightCol {

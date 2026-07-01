@@ -17,7 +17,7 @@ const TypingEffect = ({ text, className }) => {
       const timeout = setTimeout(() => {
         setDisplayedText((prev) => prev + text.charAt(index));
         setIndex(index + 1);
-      }, 55);
+      }, 50);
       return () => clearTimeout(timeout);
     } else {
       const timeout = setTimeout(() => {
