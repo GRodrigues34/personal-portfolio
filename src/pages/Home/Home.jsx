@@ -14,7 +14,7 @@ const Home = () => {
           <span className={styles.greeting}>{t('home_greeting')}</span>
           <TypingEffect text={t('home_name')} className={styles.name} />
           <h2 className={styles.title}>{t('home_title')}</h2>
-          
+
           <div className={styles.socialLinks}>
             <a href="https://github.com/GRodrigues34" target="_blank" rel="noopener noreferrer">
               <Github size={24} />
@@ -28,11 +28,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
+
       <div className={styles.rightCol}>
-        <img 
-          src="/images/photo-gustavo.jpg" 
-          alt="Gustavo Rodrigues — Backend & Frontend Developer" 
+        <img
+          src="/images/photo-gustavo.jpg"
+          alt="Gustavo Rodrigues — Backend & Frontend Developer"
           className={styles.profileImg}
         />
       </div>
