@@ -40,6 +40,9 @@ export const translations = {
     portfolio_project3_title: "Backend Developer — SisAPEC",
     portfolio_project3_desc: "Development and maintenance of the SisAPEC system, an outpatient care system for basic health units.",
     portfolio_project3_link_label: "VIEW PROJECT",
+    portfolio_project4_title: "Personal — Aurora Bookstore Fullstack Application",
+    portfolio_project4_desc: "E-commerce bookstore with a local artificial intelligence model that acts as a virtual assistant.",
+    portfolio_project4_link_label: "VIEW ON GITHUB",
     portfolio_more: "And many more to come!",
 
     // Contact
@@ -92,7 +95,9 @@ export const translations = {
     portfolio_project3_title: "Desenvolvedor Backend — SisAPEC",
     portfolio_project3_desc: "Desenvolvimento e manutenção do sistema SisAPEC, sistema de atendimento ambulatorial para unidades básicas de saúde.",
     portfolio_project3_link_label: "VER PROJETO",
-
+    portfolio_project4_title: "Pessoal - Aplicação Fullstack Aurora Bookstore",
+    portfolio_project4_desc: "Livraria E-commerce com um modelo de inteligência artificial local que atua como assistente virtual.",
+    portfolio_project4_link_label: "VER NO GITHUB",
     portfolio_more: "E muito mais por vir!",
 
     // Contact

@@ -25,5 +25,14 @@ export const projects = [
     linkLabelKey: 'portfolio_project3_link_label',
     link: 'https://www.sisapec.com/',
     type: 'work'
+  },
+  {
+    id: 4,
+    imageKey: 'project-aurora.jpg',
+    titleKey: 'portfolio_project4_title',
+    descKey: 'portfolio_project4_desc',
+    linkLabelKey: 'portfolio_project4_link_label',
+    link: 'https://github.com/GRodrigues34/aurora-bookstore',
+    type: 'personal'
   }
 ];
