@@ -32,7 +32,7 @@ export const projects = [
     titleKey: 'portfolio_project4_title',
     descKey: 'portfolio_project4_desc',
     linkLabelKey: 'portfolio_project4_link_label',
-    link: 'https://github.com/GRodrigues34/aurora-bookstore',
+    link: 'https://github.com/GRodrigues34/aurora-book-store',
     type: 'personal'
   }
 ];
