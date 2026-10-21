@@ -8,6 +8,7 @@ import styles from './Skills.module.css';
 const skillsUsing = [
   { name: 'JAVA', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
   { name: 'JAVASCRIPT', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+  { name: 'TYPESCRIPT', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
   { name: 'PYTHON', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
   { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
   { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
@@ -15,13 +16,18 @@ const skillsUsing = [
   { name: 'REACT', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
   { name: 'MYSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
   { name: 'GIT', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
-  { name: 'DOCKER', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' }
+  { name: 'DOCKER', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+  { name: 'AI AGENTS', icon: 'https://img.icons8.com/ios-filled/50/000000/artificial-intelligence.png' },
+  { name: 'N8N', icon: '/images/n8n-icon.webp' },
+  { name: 'RAG', icon: '/images/icon-rag.svg' },
+  { name: 'MCP', icon: '/images/icon-mcp.svg' }
 ];
 
 const skillsLearning = [
-  { name: 'TYPESCRIPT', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
-  { name: 'AI AGENTS', icon: 'https://img.icons8.com/ios-filled/50/000000/artificial-intelligence.png' }, // Generic robot/AI icon
-  { name: 'BACKEND PERFORMANCE', icon: 'https://img.icons8.com/ios-filled/50/000000/speed.png' } // Generic speed icon
+  { name: 'API PERFORMANCE', icon: 'https://img.icons8.com/ios-filled/50/000000/speed.png' },
+  { name: 'CYBERSECURITY', icon: '/images/icon-cybersecurity.svg' },
+  { name: 'LANGCHAIN', icon: '/images/langchain-color-4.png' },
+  { name: 'JEV', icon: '/images/jev-fcb8f554778c.png' }
 ];
 
 const skillsOther = [
@@ -29,7 +35,6 @@ const skillsOther = [
   { name: 'C', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' },
   { name: 'HASKELL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haskell/haskell-original.svg' },
   { name: 'RABBITMQ', icon: 'https://img.icons8.com/ios-filled/50/000000/rabbit.png' },
-  { name: 'POSTGRESQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
   { name: 'SCRUM', icon: '/images/icon-scrum.png' }
 ];
 
